@@ -8,11 +8,14 @@ class Holding:
         self._date = date 
         self._nshares = nshares 
         self._price = price 
-
-    def __repr__():
-        pass # repr()
+        
+    def __repr__(self):
+        return f"<{self._name} {self._date} {self._nshares} {self._price}>"
 
 
     def __str__(self):
-        pass # print()
+        return (f"The shares' names {self._name} " +
+                    f"The date: {self._date} "+
+                    f"The number of shares is: {self._nshares} "+
+                    f"The price of each share is: {self._price}")
     
